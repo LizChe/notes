@@ -1,0 +1,167 @@
+/* Reset default layout */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+/* Body */
+
+html, body {
+    margin: 20px;
+    height: 100%;
+    background-color: #005247;
+    color: #FFE9D0;
+    font-family: 'Josefin Slab', serif;
+
+}
+
+/* Heading tags */
+
+h1, h3 {
+    font-family: 'Fredericka the Great', cursive;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+/* Header */
+
+header {
+    text-align: center;
+    display: block;
+    margin: auto;
+    line-height: 1.5;
+}
+
+/* Centering Sections */
+
+#primary-content {
+    margin-top: 80px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+/* Section with list of notes */
+
+section #notes-list {
+    width: 500px;
+    padding: 20px 0 20px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-left: 5px double #FFE9D0;
+    background-color: rgba(196, 252, 241, 0.25);
+}
+
+/* Title */
+
+#textarea-title-container,
+.custom-note-title {
+    margin-top: 10px;
+    background-color: #005247;
+    border: 2px solid #FFE9D0;
+    padding: 10px;
+    width: 90%;
+    cursor: text;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Note Area */
+
+.custom-note-text {
+    resize: none;
+    width: 90%;
+    outline-color: #005247;
+    font-family: 'Annie Use Your Telescope', cursive;
+    padding: 10px;
+}
+
+/* Buttons */
+
+button {
+    padding: 5px;
+    outline: none;
+    color: #FFE9D0;
+    background-color: #005247;
+    border: 2px solid #FFE9D0;
+    box-shadow:
+            0 2px 5px rgba(0, 0, 0, 0.5),
+            0 1px 0 rgba(255, 255, 255, 0.25) inset,
+            0 0 0 rgba(0, 0, 0, 0.25) inset,
+            0 20px 0 rgba(255, 255, 255, 0.03) inset,
+            0 -20px 20px rgba(0, 0, 0, 0.15) inset,
+            0 20px 20px rgba(255, 255, 255, 0.05) inset;
+}
+
+button:hover {
+    cursor: pointer;
+    color: #005247;
+    background-color: #FFE9D0;
+    border: 2px solid #005247;
+}
+
+/* Section with create note form */
+
+#create-note-button-container {
+    height: 200px;
+    width: 500px;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    filter: grayscale(100%);
+    background-color: rgba(255, 126, 7, 0.64);
+}
+
+#create-note-button-container:hover {
+    cursor: pointer;
+    filter: grayscale(0%);
+}
+
+#separator {
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: bold;
+    color: #FF7E07;
+}
+
+#create-note-button-container p {
+    line-height: 3.0;
+    font-size: 20px;
+}
+
+/*  Textarea of create note form */
+
+#textarea-title-container {
+    width: 500px;
+    background-color: #FF7E07;
+}
+
+#textarea-container textarea {
+    width: 500px;
+    outline-color: #FF7E07;
+    color: #005247;
+    resize: vertical;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Annie Use Your Telescope', cursive;
+}
