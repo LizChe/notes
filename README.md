@@ -4,7 +4,7 @@
 
 Local storage based notes.
 
-Features of the notepad:
+__Features of the notepad__:
 - Create a single or multiple notes;
 - Edit note's content and title;
 - Delete a note;
